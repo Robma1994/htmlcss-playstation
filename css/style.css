@@ -1,0 +1,91 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Common*/
+/*HEIGHT*/
+.ms_h400 {
+    height: 400px;
+}
+.ms_h250 {
+    height: 250px;
+}
+/*FINE HEIGHT*/
+/*BACKGROUND-COLOR*/
+.ms_bg_c-r {
+    background-color: red;
+}
+.ms_bg_c-b {
+    background-color: blue;
+}
+/*FINE BACKGROUND-COLOR*/
+.ms_button {
+    padding: 10px 10px;
+}
+/*Fine Common*/
+
+/*HEADER*/
+header {
+    height: 100px;
+}
+.header-top {
+    height: calc(100% - 70px);
+}
+.header-bottom {
+    height: 70px;
+}
+#logo {
+    height: 100%;
+    background-color: indianred;
+}
+#nav {
+    height: 100%;
+    background-color: blue;
+}
+.ms_explosion  ul > li {
+    list-style-type: none;
+}
+.ms_explosion {
+    display: none;
+}
+/*FINE HEADER*/
+/*JUMBOTRON*/
+.jumbotron {
+    background-color: lightyellow;
+    height: 300px;
+}
+.jumbotron > img {
+    width: 100%;
+}
+/*FINE JUMBOTRON*/
+/*SECTION GAMES*/
+.game {
+ height: 80px;
+ border: 1px solid black;
+ border-radius: 10px 10px;
+}
+.retural {
+    background-color: green;
+}
+.ratcket {
+    background-color: indigo;
+}
+
+/*FINE SECTION GAMES*/
+
+
+/*MEDIA QUERY*/
+
+@media screen and (min-width: 992px) {
+    .ms_explosion{
+        display: block;
+    }
+    .ms_hamburger {
+        display: none;
+    }
+
+}
+
+
+/*FINE MEDIA QUERY*/
