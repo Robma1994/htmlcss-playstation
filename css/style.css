@@ -5,6 +5,9 @@
 }
 /*Common*/
 /*HEIGHT*/
+.ms_h600 {
+    height: 600px;
+}
 .ms_h400 {
     height: 400px;
 }
@@ -23,6 +26,11 @@
 .ms_button {
     padding: 10px 10px;
 }
+/*PADDING*/
+.padding00 {
+    padding: 0;
+}
+/*FINE WIDTH*/
 /*Fine Common*/
 
 /*HEADER*/
@@ -51,29 +59,50 @@ header {
 }
 /*FINE HEADER*/
 /*JUMBOTRON*/
-.jumbotron {
-    background-color: lightyellow;
-    height: 300px;
-}
+
 .jumbotron > img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 /*FINE JUMBOTRON*/
 /*SECTION GAMES*/
 .game {
- height: 80px;
- border: 1px solid black;
- border-radius: 10px 10px;
+    height: 120px;
+    border: 4px solid blue;
+    border-radius: 10px 10px;
 }
-.retural {
-    background-color: green;
+
+.retural img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 10px 10px;
+    padding: 5px 5px;
 }
-.ratcket {
-    background-color: indigo;
+.ratcket img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 10px 10px;
+    padding: 5px 5px;
 }
 
 /*FINE SECTION GAMES*/
+/*SECTION PLAYSTATION-5*/
 
+/*PlayStation bottom-top*/
+.bottom-top > div:nth-child(2) > div {
+    width: 100%;
+}
+.bottom-top > div:nth-child(2) > div > img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/*Fine PlayStation bottom-top*/
+
+/*FINE SECTION PLAYSTATION-5*/
 
 /*MEDIA QUERY*/
 
