@@ -15,6 +15,13 @@
     height: 250px;
 }
 /*FINE HEIGHT*/
+/*PULSANTI*/
+.ms_click {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50px 50px;
+}
+/*FINE PULSANTI*/
 /*BACKGROUND-COLOR*/
 .ms_bg_c-r {
     background-color: red;
@@ -43,9 +50,8 @@ header {
 .header-bottom {
     height: 70px;
 }
-#logo {
-    height: 100%;
-    background-color: indianred;
+#logo > img {
+   width: 100%; 
 }
 #nav {
     height: 100%;
@@ -62,28 +68,25 @@ header {
 
 .jumbotron > img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
+
 /*FINE JUMBOTRON*/
 /*SECTION GAMES*/
 .game {
-    height: 120px;
     border: 4px solid blue;
     border-radius: 10px 10px;
 }
 
 .retural img {
     width: 100%;
-    height: 100%;
-    object-fit: fill;
+    object-fit: contain;
     border-radius: 10px 10px;
     padding: 5px 5px;
 }
 .ratcket img {
     width: 100%;
-    height: 100%;
-    object-fit: fill;
+    object-fit: contain;
     border-radius: 10px 10px;
     padding: 5px 5px;
 }
@@ -99,11 +102,43 @@ header {
     width: 100%;
     object-fit: cover;
 }
+button {
+    padding: 5px 10px;
+    color: white;
+    border-radius: 40px 40px;
+    border: none;
+}
+.playstation {
+    border: 2px solid blue;
+    border-radius: 10px 10px;
+}
 
+.playstation img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px 10px;
+    padding: 5px 5px;
+}
+.playstation img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px 10px;
+    padding: 5px 5px;
+}
 /*Fine PlayStation bottom-top*/
 
 /*FINE SECTION PLAYSTATION-5*/
+/*NUOVE USCITE*/
+.tony > img, .crash > img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 20px 20px;
+}
+.tony > div {
+    width: 95%;
+}
 
+/*NUOVE USCITE*/
 /*MEDIA QUERY*/
 
 @media screen and (min-width: 992px) {
