@@ -137,8 +137,25 @@ button {
 .tony > div {
     width: 95%;
 }
-
 /*NUOVE USCITE*/
+/*EXPLORE*/
+div > img {
+    width: 100%;
+}
+
+/*FINE EXPLORE*/
+
+/*JUMBOTRON PLAYSTATION NOW*/
+#playNow {
+    width: 100%;
+}
+/*FINE JUMBOTRON PLAYNOW*/
+/*SOCIAL*/
+
+#social > .col-6 > div > img {
+    width: 100%;
+}
+/*FINE SOCIAL*/
 /*MEDIA QUERY*/
 
 @media screen and (min-width: 992px) {
@@ -148,6 +165,13 @@ button {
     .ms_hamburger {
         display: none;
     }
+
+}
+@media screen and (max-width: 778px) {
+    #jumbotron-april, #jumbotron-avengers {
+        display: none;
+    }
+
 
 }
 
