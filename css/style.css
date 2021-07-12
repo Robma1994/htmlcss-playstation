@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 /*Common*/
+/*GHOST*/
+#ghost {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: -35px;
+}
+/*FINE GHOST*/
 /*HEIGHT*/
 .ms_h600 {
     height: 600px;
@@ -29,40 +37,105 @@
 .ms_bg_c-b {
     background-color: blue;
 }
+.ms_bg_c-black {
+    background-color: black;
+}
 /*FINE BACKGROUND-COLOR*/
 .ms_button {
     padding: 10px 10px;
 }
 /*PADDING*/
 .padding00 {
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
-/*FINE WIDTH*/
+/*PADDING*/
+/*MARGIN*/
+.ms_mb-0 {
+    margin-bottom: 0;
+}
+.ms_mt-100 {
+    margin-top: 100px;
+}
+/*FINE MARGIN*/
 /*Fine Common*/
 
 /*HEADER*/
 header {
+    width: 100%;
     height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
+/*TOP*/
 .header-top {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
     height: calc(100% - 70px);
+    background-color: black;
 }
+.header-top > img {
+    width: 100px;
+}
+/*FINE TOP*/
+/*BOTTOM*/
 .header-bottom {
     height: 70px;
+    display: flex;
+    background-color: lightgrey;
 }
-#logo > img {
-   width: 100%; 
+.header-bottom-left {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#nav {
+.header-bottom-left > img {
+    width: 100%;
     height: 100%;
-    background-color: blue;
 }
+/*CENTER*/
+.header-bottom-center {
+    width: 55%;
+    display: flex;
+    align-items: center;
+}
+.header-bottom-center > ul, .header-bottom-right > ul {
+    display: flex;
+    align-items: center;
+}
+
+.header-bottom-center li, .header-bottom-right li {
+    list-style-type: none;
+    margin-right: 20px;
+    position: relative;
+}
+
+.header-bottom-center li:active #ghost {
+    display: block;
+}
+#ghost > li {
+    background-color: lightgrey;
+    padding: 10px 20px;
+}
+/*FINE CENTER*/
+.header-bottom-right {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
 .ms_explosion  ul > li {
     list-style-type: none;
 }
 .ms_explosion {
     display: none;
 }
+/*FINE BOTTOM*/
 /*FINE HEADER*/
 /*JUMBOTRON*/
 
@@ -119,6 +192,10 @@ button {
 /*Fine PlayStation bottom-bottom*/
 /*FINE SECTION PLAYSTATION-5*/
 
+/*JUMBOTRON TAKES*/
+
+/*FINE JUMBOTRON TAKES*/
+
 /*NUOVE USCITE*/
 .tony > img, .crash > img {
     width: 100%;
@@ -155,6 +232,29 @@ div > img {
     width: 100%;
 }
 /*FINE SOCIAL*/
+/*FOOTER*/
+
+footer #logo-footer {
+    width: 80px;;
+    margin-bottom: 30px;
+}
+
+footer svg {
+    width: 40px;
+    height: 20px;
+}
+.col-lg-6 > div > p {
+    display: inline-block;
+}
+footer li {
+    list-style-type: none;
+}
+
+.footer-bottom img {
+    width: 100px;
+}
+
+/*FINE FOOTER*/
 /*MEDIA QUERY*/
 
 @media screen and (min-width: 992px) {
@@ -164,7 +264,9 @@ div > img {
     .ms_hamburger {
         display: none;
     }
-
+    .footer-bottom > div:nth-child(2) > div:nth-child(1) {
+        width: 50%;
+    }
 }
 @media screen and (max-width: 768px) {
     #jumbotron-april, #jumbotron-avengers {
