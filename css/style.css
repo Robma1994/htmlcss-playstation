@@ -108,26 +108,17 @@ button {
     border-radius: 40px 40px;
     border: none;
 }
-.playstation {
-    border: 2px solid blue;
-    border-radius: 10px 10px;
-}
-
-.playstation img {
-    width: 100%;
-    object-fit: contain;
-    border-radius: 10px 10px;
-    padding: 5px 5px;
-}
-.playstation img {
-    width: 100%;
-    object-fit: contain;
-    border-radius: 10px 10px;
-    padding: 5px 5px;
-}
 /*Fine PlayStation bottom-top*/
+/*PlayStation bottom-bottom*/
 
+.playstation img {
+    width: 100%;
+    object-fit: contain;
+}
+
+/*Fine PlayStation bottom-bottom*/
 /*FINE SECTION PLAYSTATION-5*/
+
 /*NUOVE USCITE*/
 .tony > img, .crash > img {
     width: 100%;
