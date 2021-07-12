@@ -73,21 +73,21 @@ header {
 
 /*FINE JUMBOTRON*/
 /*SECTION GAMES*/
-.game {
+.one {
     border: 4px solid blue;
-    border-radius: 10px 10px;
+    border-radius: 22px 22px;
 }
 
 .retural img {
     width: 100%;
     object-fit: contain;
-    border-radius: 10px 10px;
-    padding: 5px 5px;
+    border-radius: 22px 22px;
+    padding: 2px 2px;
 }
 .ratcket img {
     width: 100%;
     object-fit: contain;
-    border-radius: 10px 10px;
+    border-radius: 22px 22px;
     padding: 5px 5px;
 }
 
@@ -112,7 +112,7 @@ button {
 /*PlayStation bottom-bottom*/
 
 .playstation img {
-    width: 100%;
+    width: 50%;
     object-fit: contain;
 }
 
@@ -135,7 +135,15 @@ div > img {
 }
 
 /*FINE EXPLORE*/
-
+/*PLAYSTATION PLUS*/
+#playplus > div > img {
+    width: 100%;
+}
+.centratura {
+    width: 90%;
+    margin: 0 auto;
+}
+/*FINE PLAYSTATION PLUS*/
 /*JUMBOTRON PLAYSTATION NOW*/
 #playNow {
     width: 100%;
@@ -158,12 +166,10 @@ div > img {
     }
 
 }
-@media screen and (max-width: 778px) {
+@media screen and (max-width: 768px) {
     #jumbotron-april, #jumbotron-avengers {
         display: none;
     }
-
-
 }
 
 
