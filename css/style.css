@@ -5,7 +5,7 @@
 }
 /*Common*/
 /*GHOST*/
-#ghost {
+.ghost {
     display: none;
     position: absolute;
     top: 50px;
@@ -85,6 +85,13 @@ header {
     height: 70px;
     display: flex;
     background-color: lightgrey;
+    position: relative;
+}
+.header-bottom-menu {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    display: none;
 }
 .header-bottom-left {
     width: 10%;
@@ -98,7 +105,7 @@ header {
 }
 /*CENTER*/
 .header-bottom-center {
-    width: 55%;
+    width: 60%;
     display: flex;
     align-items: center;
 }
@@ -113,28 +120,22 @@ header {
     position: relative;
 }
 
-.header-bottom-center li:active #ghost {
+.header-bottom-center li:active .ghost {
     display: block;
 }
-#ghost > li {
+.ghost > li {
     background-color: lightgrey;
     padding: 10px 20px;
 }
 /*FINE CENTER*/
 .header-bottom-right {
-    width: 35%;
+    width: 30%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
 
-.ms_explosion  ul > li {
-    list-style-type: none;
-}
-.ms_explosion {
-    display: none;
-}
 /*FINE BOTTOM*/
 /*FINE HEADER*/
 /*JUMBOTRON*/
@@ -258,12 +259,7 @@ footer li {
 /*MEDIA QUERY*/
 
 @media screen and (min-width: 992px) {
-    .ms_explosion{
-        display: block;
-    }
-    .ms_hamburger {
-        display: none;
-    }
+    
     .footer-bottom > div:nth-child(2) > div:nth-child(1) {
         width: 50%;
     }
@@ -272,7 +268,20 @@ footer li {
     #jumbotron-april, #jumbotron-avengers {
         display: none;
     }
+    .header-bottom-menu {
+        display: block;
+    }
+    .header-bottom-center, .header-bottom-right {
+        display: none;
+    }
+    .header-bottom-left {
+        width: 20%;
+    }
+    .header-bottom-center {
+        width: 45%;
+    }
 }
+
 
 
 /*FINE MEDIA QUERY*/
