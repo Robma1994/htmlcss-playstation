@@ -4,14 +4,9 @@
     box-sizing: border-box;
 }
 /*Common*/
-/*GHOST*/
-.ghost {
-    display: none;
-    position: absolute;
-    top: 50px;
-    left: -35px;
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
-/*FINE GHOST*/
 /*HEIGHT*/
 .ms_h600 {
     height: 600px;
@@ -49,6 +44,12 @@
     padding-left: 0;
     padding-right: 0;
 }
+.padding-t230 {
+    padding-top: 230px;
+}
+.padding-l60 {
+    padding-left: 60px;
+}
 /*PADDING*/
 /*MARGIN*/
 .ms_mb-0 {
@@ -56,6 +57,15 @@
 }
 .ms_mt-100 {
     margin-top: 100px;
+}
+.ms_mb-15px {
+    margin-bottom: 15px;
+}
+.ms_ml-0 {
+    margin-left: 0;
+}
+.ms-l-20 {
+    margin-left: 20px;
 }
 /*FINE MARGIN*/
 /*Fine Common*/
@@ -117,14 +127,27 @@ header {
 .header-bottom-center li, .header-bottom-right li {
     list-style-type: none;
     margin-right: 20px;
-    position: relative;
+    font-weight: 600;
+    font-size: 12px;
+}
+.ghost {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    background-color: lightgrey;
+    width: 100%;
 }
 
 .header-bottom-center li:active .ghost {
     display: block;
 }
+.header-bottom-center li:hover {
+    color: blue;
+}
+
+
 .ghost > li {
-    background-color: lightgrey;
     padding: 10px 20px;
 }
 /*FINE CENTER*/
@@ -138,14 +161,25 @@ header {
 
 /*FINE BOTTOM*/
 /*FINE HEADER*/
-/*JUMBOTRON*/
 
-.jumbotron > img {
+/*JUMBOTRON*/
+section.jumbotron {
+    height: 550px;
     width: 100%;
-    object-fit: contain;
+    background-image: url("../img/jumbo-bg.png");
+    background-size: cover;
+    background-position: center;
+}
+#blocco-returnal-logo {
+    width: 100%;
+    margin-left: 0;
+}
+#returnal-logo {
+    width: 40%;
 }
 
 /*FINE JUMBOTRON*/
+/*MAIN*/
 /*SECTION GAMES*/
 .one {
     border: 4px solid blue;
@@ -233,6 +267,7 @@ div > img {
     width: 100%;
 }
 /*FINE SOCIAL*/
+/*FINE MAIN*/
 /*FOOTER*/
 
 footer #logo-footer {
@@ -263,8 +298,11 @@ footer li {
     .footer-bottom > div:nth-child(2) > div:nth-child(1) {
         width: 50%;
     }
+    #blocco-returnal-logo {
+        width: 40%;
+    }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 855px) {
     #jumbotron-april, #jumbotron-avengers {
         display: none;
     }
@@ -277,10 +315,17 @@ footer li {
     .header-bottom-left {
         width: 20%;
     }
+    .header-bottom-left > img {
+        width: 80%;
+    }
+    .header-bottom-left {
+        justify-content: flex-start;
+    }
     .header-bottom-center {
         width: 45%;
     }
 }
+
 
 
 
